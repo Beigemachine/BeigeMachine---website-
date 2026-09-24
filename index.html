@@ -9,40 +9,168 @@
 
 <body>
 
-  <div class="container">
+<div class="page">
 
-    <header>
-      <h1>BEIGE MACHINE</h1>
-      <p class="tagline">Small software for useful things.</p>
+    <!-- HEADER -->
+    <header class="site-header">
 
-      <nav>
-        <a href="#">SOFTWARE</a>
-        <a href="#">GUIDES</a>
-        <a href="#">ABOUT</a>
-        <a href="#">BUY ME A COFFEE</a>
-      </nav>
+        <a class="brand" href="#">
+            <div class="brand-computer">
+                <div class="brand-screen">☺</div>
+            </div>
+
+            <div class="brand-text">
+                <div class="brand-name">BEIGE MACHINE</div>
+                <div class="brand-subtitle">independent software</div>
+            </div>
+        </a>
+
+        <nav class="main-nav">
+            <a class="active" href="#">Home</a>
+            <a href="#">Software</a>
+            <a href="#">Guides</a>
+            <a href="#">About</a>
+
+            <span class="nav-divider"></span>
+
+            <a class="coffee" href="#">
+                <span class="coffee-icon">☕</span>
+                Buy me a coffee
+            </a>
+        </nav>
+
     </header>
 
+
+    <!-- MAIN HOMEPAGE -->
     <main>
 
-      <section class="hero">
-        <h2>Useful software.<br>No nonsense.</h2>
+        <section class="hero">
 
-        <p>
-          Beige Machine is a tiny independent software studio
-          making simple tools that do one job and do it well.
-        </p>
+            <div class="hero-computer" aria-hidden="true">
+                <div class="computer-monitor">
+                    <div class="computer-screen">
+                        <div class="smiley">☺</div>
+                    </div>
+                </div>
 
-        <a class="button" href="#">SEE THE SOFTWARE</a>
-      </section>
+                <div class="computer-tower"></div>
+                <div class="computer-keyboard"></div>
+                <div class="computer-mouse"></div>
+            </div>
+
+
+            <h1>BEIGE MACHINE</h1>
+
+            <p class="tagline">
+                Small software for useful things.
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a class="button button-primary" href="#">
+                    Browse Software
+                    <span>›</span>
+                </a>
+
+                <a class="button button-secondary" href="#">
+                    Read the Guides
+                    <span>›</span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- RETRO DESK -->
+        <section class="desk" aria-hidden="true">
+
+            <div class="desk-left">
+
+                <div class="plant">
+                    <div class="plant-leaves">🌿</div>
+                    <div class="plant-pot"></div>
+                </div>
+
+                <div class="disk-stack">
+                    <div class="disk"></div>
+                    <div class="disk"></div>
+                    <div class="disk"></div>
+                    <div class="disk"></div>
+                </div>
+
+                <div class="fan">
+                    <div class="fan-head">✣</div>
+                    <div class="fan-stand"></div>
+                </div>
+
+            </div>
+
+
+            <div class="desk-right">
+
+                <div class="telephone">
+                    ☎
+                </div>
+
+                <div class="cactus">
+                    🌵
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BEIGE MAIL -->
+        <section class="beige-mail">
+
+            <div class="mail-title">
+                <span class="mail-icon">✉</span>
+                <span>Beige Mail</span>
+            </div>
+
+            <form class="mail-form">
+
+                <label class="sr-only" for="email">
+                    Email address
+                </label>
+
+                <input
+                    id="email"
+                    type="email"
+                    placeholder="Your email address"
+                >
+
+                <button type="submit">
+                    Subscribe
+                </button>
+
+            </form>
+
+        </section>
 
     </main>
 
-    <footer>
-      <p>© 2026 Beige Machine</p>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <p>
+            © 2026 Beige Machine. All rights reserved.
+        </p>
+
+        <nav class="footer-links">
+            <a href="#">GitHub</a>
+            <a href="#">Privacy</a>
+            <a href="#">Contact</a>
+        </nav>
+
     </footer>
 
-  </div>
+</div>
 
 </body>
 </html>
