@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guides — Beige Machine</title>
+  <meta name="description" content="Guides for Beige Machine software, including DiskSnap.">
+  <meta name="theme-color" content="#071219">
+  <link rel="icon" type="image/png" href="../assets/img/logo-computer.png">
+  <link rel="preload" href="../assets/fonts/beige-pixel.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="../assets/fonts/dejavu-sans-mono.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ Header ============ -->
+  <header class="site-header">
+    <a class="brand" href="../" aria-label="Beige Machine — home">
+      <img class="brand__logo pixel" src="../assets/img/logo-computer.png"
+           srcset="../assets/img/logo-computer.png 1x, ../assets/img/logo-computer@2x.png 2x"
+           width="99" height="77" alt="">
+      <span class="brand__text">
+        <span class="brand__name">BEIGE MACH<span class="alt-i">I</span>NE</span>
+        <span class="brand__tag">independent software</span>
+      </span>
+    </a>
+
+    <nav class="site-nav" aria-label="Main">
+      <ul class="site-nav__list">
+        <li><a class="site-nav__link" href="../">Home</a></li>
+        <li><a class="site-nav__link" href="../software/">Software</a></li>
+        <li><a class="site-nav__link is-active" href="../guides/" aria-current="page">Guides</a></li>
+        <li><a class="site-nav__link" href="../about/">About</a></li>
+      </ul>
+      <!-- LAUNCH TODO: replace with the real Buy Me a Coffee URL -->
+      <a class="coffee" href="#REPLACE-WITH-BUY-ME-A-COFFEE-URL" rel="noopener">
+        <img class="coffee__icon pixel" src="../assets/img/icon-coffee.png"
+             srcset="../assets/img/icon-coffee.png 1x, ../assets/img/icon-coffee@2x.png 2x"
+             width="38" height="44" alt="">
+        <span>Buy me a coffee</span>
+      </a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ Page intro ============ -->
+    <section class="page-intro" aria-labelledby="page-title">
+      <h1 class="page-title" id="page-title">GUIDES</h1>
+      <p class="page-lede">Step-by-step help for Beige Machine software.</p>
+    </section>
+
+    <!-- ============ DiskSnap guides ============
+         To add a guide, copy the template below into the <ul>, fill it in,
+         and remove the comment markers. The "shelf" message underneath
+         hides itself automatically once the list has a guide in it.
+
+         <li class="guide-card">
+           <p class="guide-card__meta">DiskSnap &middot; Beginner</p>
+           <h3 class="guide-card__title"><a href="disksnap-first-backup/">Guide title</a></h3>
+           <p class="guide-card__summary">One or two sentences on what the guide covers.</p>
+           <a class="guide-card__link" href="disksnap-first-backup/">Read guide <span class="btn__chevron" aria-hidden="true"></span></a>
+         </li>
+    -->
+    <section class="guide-group" aria-labelledby="guides-disksnap">
+      <div class="guide-group__head">
+        <img class="guide-group__icon pixel" src="../assets/img/disksnap-icon.png" width="64" height="64" alt="">
+        <div>
+          <h2 class="guide-group__title" id="guides-disksnap">DiskSnap</h2>
+          <p class="guide-group__meta">Backing up, restoring and cloning SD cards and USB drives</p>
+        </div>
+      </div>
+
+      <ul class="guide-list">
+      </ul>
+
+      <div class="guide-shelf">
+        <p class="guide-shelf__text">New DiskSnap guides are added to this shelf as they&rsquo;re written. Beige Mail is the easiest way to hear about them.</p>
+        <div class="guide-shelf__actions">
+          <a class="btn btn--primary btn--small" href="../software/disksnap/">View DiskSnap <span class="btn__chevron" aria-hidden="true"></span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Beige Mail ============ -->
+    <section class="mail mail--page" aria-labelledby="mail-title">
+      <h2 class="mail__title" id="mail-title">
+        <img class="mail__icon pixel" src="../assets/img/icon-mail.png" srcset="../assets/img/icon-mail.png 1x, ../assets/img/icon-mail@2x.png 2x" width="51" height="36" alt="">
+        <span>Beige Mail</span>
+      </h2>
+      <form class="mail__form" name="beige-mail" action="#" method="post" data-mail-form>
+        <label class="visually-hidden" for="mail-email">Email address</label>
+        <input class="mail__input" id="mail-email" type="email" name="email" placeholder="Your email address" autocomplete="email" required>
+        <button class="mail__button" type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <div class="desk desk--page" aria-hidden="true">
+      <div class="desk__group desk__group--left">
+        <img class="desk__item desk__item--drives pixel" src="../assets/img/desk-drives.png" srcset="../assets/img/desk-drives.png 1x, ../assets/img/desk-drives@2x.png 2x" width="99" height="71" alt="">
+        <img class="desk__item desk__item--fan pixel" src="../assets/img/desk-fan.png" srcset="../assets/img/desk-fan.png 1x, ../assets/img/desk-fan@2x.png 2x" width="85" height="119" alt="">
+      </div>
+      <div class="desk__group desk__group--right">
+        <img class="desk__item desk__item--cactus pixel" src="../assets/img/desk-cactus.png" srcset="../assets/img/desk-cactus.png 1x, ../assets/img/desk-cactus@2x.png 2x" width="60" height="95" alt="">
+      </div>
+    </div>
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <p class="site-footer__copy">&copy; 2026 Beige Machine. All rights reserved.</p>
+    <ul class="site-footer__links">
+      <!-- LAUNCH TODO: replace with the real Beige Machine GitHub URL -->
+      <li><a href="#REPLACE-WITH-GITHUB-URL" rel="noopener">GitHub</a></li>
+      <li><a href="../privacy/">Privacy</a></li>
+      <li><a href="../contact/">Contact</a></li>
+    </ul>
+  </footer>
+
+  <script src="../assets/js/site.js" defer></script>
+</body>
+</html>

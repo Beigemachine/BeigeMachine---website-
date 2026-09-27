@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Software — Beige Machine</title>
+  <meta name="description" content="Software from Beige Machine, an independent software studio. Small software for useful things.">
+  <meta name="theme-color" content="#071219">
+  <link rel="icon" type="image/png" href="../assets/img/logo-computer.png">
+  <link rel="preload" href="../assets/fonts/beige-pixel.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="../assets/fonts/dejavu-sans-mono.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ Header ============ -->
+  <header class="site-header">
+    <a class="brand" href="../" aria-label="Beige Machine — home">
+      <img class="brand__logo pixel" src="../assets/img/logo-computer.png"
+           srcset="../assets/img/logo-computer.png 1x, ../assets/img/logo-computer@2x.png 2x"
+           width="99" height="77" alt="">
+      <span class="brand__text">
+        <span class="brand__name">BEIGE MACH<span class="alt-i">I</span>NE</span>
+        <span class="brand__tag">independent software</span>
+      </span>
+    </a>
+
+    <nav class="site-nav" aria-label="Main">
+      <ul class="site-nav__list">
+        <li><a class="site-nav__link" href="../">Home</a></li>
+        <li><a class="site-nav__link is-active" href="../software/" aria-current="page">Software</a></li>
+        <li><a class="site-nav__link" href="../guides/">Guides</a></li>
+        <li><a class="site-nav__link" href="../about/">About</a></li>
+      </ul>
+      <!-- LAUNCH TODO: replace with the real Buy Me a Coffee URL -->
+      <a class="coffee" href="#REPLACE-WITH-BUY-ME-A-COFFEE-URL" rel="noopener">
+        <img class="coffee__icon pixel" src="../assets/img/icon-coffee.png"
+             srcset="../assets/img/icon-coffee.png 1x, ../assets/img/icon-coffee@2x.png 2x"
+             width="38" height="44" alt="">
+        <span>Buy me a coffee</span>
+      </a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ Page intro ============ -->
+    <section class="page-intro" aria-labelledby="page-title">
+      <h1 class="page-title" id="page-title">SOFTWARE</h1>
+      <p class="page-lede">Small software for useful things.</p>
+    </section>
+
+    <!-- ============ Product list ============
+         One <article class="product-card"> per product. Newest first. -->
+    <section class="product-list" aria-label="Beige Machine software">
+      <article class="product-card">
+        <a class="product-card__icon-link" href="disksnap/" tabindex="-1" aria-hidden="true">
+          <img class="product-card__icon pixel" src="../assets/img/disksnap-icon.png" width="96" height="96" alt="">
+        </a>
+        <div class="product-card__body">
+          <p class="product-card__meta">Windows &middot; Free</p>
+          <h2 class="product-card__name"><a href="disksnap/">DiskSnap</a></h2>
+          <p class="product-card__summary">Back up, clone and restore SD cards and USB drives, saving only the space that&rsquo;s actually used.</p>
+        </div>
+        <div class="product-card__actions">
+          <a class="btn btn--primary btn--small" href="disksnap/">View DiskSnap <span class="btn__chevron" aria-hidden="true"></span></a>
+          <!-- RELEASE TODO: replace the placeholder href with the real DiskSnap download URL -->
+          <a class="btn btn--outline btn--small" href="#REPLACE-WITH-DISKSNAP-DOWNLOAD-URL" data-download="disksnap">Download <span class="btn__chevron" aria-hidden="true"></span></a>
+        </div>
+      </article>
+    </section>
+
+    <div class="desk desk--page" aria-hidden="true">
+      <div class="desk__group desk__group--left">
+        <img class="desk__item desk__item--drives pixel" src="../assets/img/desk-drives.png" srcset="../assets/img/desk-drives.png 1x, ../assets/img/desk-drives@2x.png 2x" width="99" height="71" alt="">
+      </div>
+      <div class="desk__group desk__group--right">
+        <img class="desk__item desk__item--cactus pixel" src="../assets/img/desk-cactus.png" srcset="../assets/img/desk-cactus.png 1x, ../assets/img/desk-cactus@2x.png 2x" width="60" height="95" alt="">
+      </div>
+    </div>
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <p class="site-footer__copy">&copy; 2026 Beige Machine. All rights reserved.</p>
+    <ul class="site-footer__links">
+      <!-- LAUNCH TODO: replace with the real Beige Machine GitHub URL -->
+      <li><a href="#REPLACE-WITH-GITHUB-URL" rel="noopener">GitHub</a></li>
+      <li><a href="../privacy/">Privacy</a></li>
+      <li><a href="../contact/">Contact</a></li>
+    </ul>
+  </footer>
+
+  <script src="../assets/js/site.js" defer></script>
+</body>
+</html>

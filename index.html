@@ -1,176 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beige Machine — Small software for useful things.</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beige Machine — independent software</title>
+  <meta name="description" content="Beige Machine is an independent software studio. Small software for useful things.">
+  <meta name="theme-color" content="#071219">
+  <link rel="icon" type="image/png" href="assets/img/logo-computer.png">
+  <link rel="preload" href="assets/fonts/beige-pixel.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/fonts/dejavu-sans-mono.woff" as="font" type="font/woff" crossorigin>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<div class="page">
+  <!-- ============ Header ============ -->
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Beige Machine — home">
+      <img class="brand__logo pixel" src="assets/img/logo-computer.png"
+           srcset="assets/img/logo-computer.png 1x, assets/img/logo-computer@2x.png 2x"
+           width="99" height="77" alt="">
+      <span class="brand__text">
+        <span class="brand__name">BEIGE MACH<span class="alt-i">I</span>NE</span>
+        <span class="brand__tag">independent software</span>
+      </span>
+    </a>
 
-    <!-- HEADER -->
-    <header class="site-header">
+    <nav class="site-nav" aria-label="Main">
+      <ul class="site-nav__list">
+        <li><a class="site-nav__link is-active" href="./" aria-current="page">Home</a></li>
+        <li><a class="site-nav__link" href="software/">Software</a></li>
+        <li><a class="site-nav__link" href="guides/">Guides</a></li>
+        <li><a class="site-nav__link" href="about/">About</a></li>
+      </ul>
+      <!-- LAUNCH TODO: replace with the real Buy Me a Coffee URL -->
+      <a class="coffee" href="#REPLACE-WITH-BUY-ME-A-COFFEE-URL" rel="noopener">
+        <img class="coffee__icon pixel" src="assets/img/icon-coffee.png"
+             srcset="assets/img/icon-coffee.png 1x, assets/img/icon-coffee@2x.png 2x"
+             width="38" height="44" alt="">
+        <span>Buy me a coffee</span>
+      </a>
+    </nav>
+  </header>
 
-        <a class="brand" href="#">
-            <div class="brand-computer">
-                <div class="brand-screen">☺</div>
-            </div>
+  <main id="main">
+    <!-- ============ Hero ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero__computer pixel" src="assets/img/hero-computer.png"
+           srcset="assets/img/hero-computer.png 1x, assets/img/hero-computer@2x.png 2x"
+           width="398" height="217" alt="A beige retro computer with a smiling blue screen">
 
-            <div class="brand-text">
-                <div class="brand-name">BEIGE MACHINE</div>
-                <div class="brand-subtitle">independent software</div>
-            </div>
-        </a>
+      <h1 class="hero__title" id="hero-title">BEIGE MACH<span class="alt-i">I</span>NE</h1>
+      <p class="hero__tagline">Small software for useful things.</p>
 
-        <nav class="main-nav">
-            <a class="active" href="#">Home</a>
-            <a href="#">Software</a>
-            <a href="#">Guides</a>
-            <a href="#">About</a>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="software/">Browse Software <span class="btn__chevron" aria-hidden="true"></span></a>
+        <a class="btn btn--outline" href="guides/">Read the Guides <span class="btn__chevron" aria-hidden="true"></span></a>
+      </div>
+    </section>
 
-            <span class="nav-divider"></span>
+    <!-- ============ Desk ============ -->
+    <div class="desk" aria-hidden="true">
+      <div class="desk__group desk__group--left">
+        <img class="desk__item desk__item--plant pixel" src="assets/img/desk-plant.png"
+             srcset="assets/img/desk-plant.png 1x, assets/img/desk-plant@2x.png 2x" width="130" height="173" alt="">
+        <img class="desk__item desk__item--drives pixel" src="assets/img/desk-drives.png"
+             srcset="assets/img/desk-drives.png 1x, assets/img/desk-drives@2x.png 2x" width="99" height="71" alt="">
+        <img class="desk__item desk__item--fan pixel" src="assets/img/desk-fan.png"
+             srcset="assets/img/desk-fan.png 1x, assets/img/desk-fan@2x.png 2x" width="85" height="119" alt="">
+      </div>
+      <div class="desk__group desk__group--right">
+        <img class="desk__item desk__item--phone pixel" src="assets/img/desk-telephone.png"
+             srcset="assets/img/desk-telephone.png 1x, assets/img/desk-telephone@2x.png 2x" width="157" height="69" alt="">
+        <img class="desk__item desk__item--cactus pixel" src="assets/img/desk-cactus.png"
+             srcset="assets/img/desk-cactus.png 1x, assets/img/desk-cactus@2x.png 2x" width="60" height="95" alt="">
+      </div>
+    </div>
 
-            <a class="coffee" href="#">
-                <span class="coffee-icon">☕</span>
-                Buy me a coffee
-            </a>
-        </nav>
+    <!-- ============ Beige Mail ============ -->
+    <section class="mail" aria-labelledby="mail-title">
+      <h2 class="mail__title" id="mail-title">
+        <img class="mail__icon pixel" src="assets/img/icon-mail.png"
+             srcset="assets/img/icon-mail.png 1x, assets/img/icon-mail@2x.png 2x" width="51" height="36" alt="">
+        <span>Beige Mail</span>
+      </h2>
+      <!-- Not connected to a mailing-list service yet: submission is disabled
+           until a provider (e.g. Buttondown, Mailchimp) is chosen. -->
+      <form class="mail__form" name="beige-mail" action="#" method="post" data-mail-form>
+        <label class="visually-hidden" for="mail-email">Email address</label>
+        <input class="mail__input" id="mail-email" type="email" name="email" placeholder="Your email address" autocomplete="email" required>
+        <button class="mail__button" type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
 
-    </header>
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <p class="site-footer__copy">&copy; 2026 Beige Machine. All rights reserved.</p>
+    <ul class="site-footer__links">
+      <!-- LAUNCH TODO: replace with the real Beige Machine GitHub URL -->
+      <li><a href="#REPLACE-WITH-GITHUB-URL" rel="noopener">GitHub</a></li>
+      <li><a href="privacy/">Privacy</a></li>
+      <li><a href="contact/">Contact</a></li>
+    </ul>
+  </footer>
 
-
-    <!-- MAIN HOMEPAGE -->
-    <main>
-
-        <section class="hero">
-
-            <div class="hero-computer" aria-hidden="true">
-                <div class="computer-monitor">
-                    <div class="computer-screen">
-                        <div class="smiley">☺</div>
-                    </div>
-                </div>
-
-                <div class="computer-tower"></div>
-                <div class="computer-keyboard"></div>
-                <div class="computer-mouse"></div>
-            </div>
-
-
-            <h1>BEIGE MACHINE</h1>
-
-            <p class="tagline">
-                Small software for useful things.
-            </p>
-
-
-            <div class="hero-buttons">
-
-                <a class="button button-primary" href="#">
-                    Browse Software
-                    <span>›</span>
-                </a>
-
-                <a class="button button-secondary" href="#">
-                    Read the Guides
-                    <span>›</span>
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- RETRO DESK -->
-        <section class="desk" aria-hidden="true">
-
-            <div class="desk-left">
-
-                <div class="plant">
-                    <div class="plant-leaves">🌿</div>
-                    <div class="plant-pot"></div>
-                </div>
-
-                <div class="disk-stack">
-                    <div class="disk"></div>
-                    <div class="disk"></div>
-                    <div class="disk"></div>
-                    <div class="disk"></div>
-                </div>
-
-                <div class="fan">
-                    <div class="fan-head">✣</div>
-                    <div class="fan-stand"></div>
-                </div>
-
-            </div>
-
-
-            <div class="desk-right">
-
-                <div class="telephone">
-                    ☎
-                </div>
-
-                <div class="cactus">
-                    🌵
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- BEIGE MAIL -->
-        <section class="beige-mail">
-
-            <div class="mail-title">
-                <span class="mail-icon">✉</span>
-                <span>Beige Mail</span>
-            </div>
-
-            <form class="mail-form">
-
-                <label class="sr-only" for="email">
-                    Email address
-                </label>
-
-                <input
-                    id="email"
-                    type="email"
-                    placeholder="Your email address"
-                >
-
-                <button type="submit">
-                    Subscribe
-                </button>
-
-            </form>
-
-        </section>
-
-    </main>
-
-
-    <!-- FOOTER -->
-    <footer class="site-footer">
-
-        <p>
-            © 2026 Beige Machine. All rights reserved.
-        </p>
-
-        <nav class="footer-links">
-            <a href="#">GitHub</a>
-            <a href="#">Privacy</a>
-            <a href="#">Contact</a>
-        </nav>
-
-    </footer>
-
-</div>
-
+  <script src="assets/js/site.js" defer></script>
 </body>
 </html>
