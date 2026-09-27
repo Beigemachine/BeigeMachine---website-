@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DiskSnap — Beige Machine</title>
-  <meta name="description" content="DiskSnap backs up, clones and restores SD cards and USB drives on Windows, saving only the space that is actually used.">
+  <meta name="description" content="DiskSnap for Windows makes bootable USB drives and SD cards from Linux, Raspberry Pi and Windows images, and backs drives up to compressed .dsnap files you can restore later.">
   <meta name="theme-color" content="#071219">
   <link rel="icon" type="image/png" href="../../assets/img/logo-computer.png">
   <link rel="preload" href="../../assets/fonts/beige-pixel.woff" as="font" type="font/woff" crossorigin>
@@ -52,7 +52,7 @@
     <section class="product-hero" aria-labelledby="page-title">
       <img class="product-hero__icon pixel" src="../../assets/img/disksnap-icon.png" width="96" height="96" alt="">
       <h1 class="page-title" id="page-title">DISKSNAP</h1>
-      <p class="page-lede">Compact backups for SD cards and USB drives.</p>
+      <p class="page-lede">Bootable drives and backups for SD cards and USB sticks.</p>
       <p class="product-hero__meta">For Windows &middot; Free</p>
       <div class="hero__actions">
         <!-- RELEASE TODO: replace the placeholder href with the real DiskSnap download URL -->
@@ -66,20 +66,20 @@
       <h2 class="section__title" id="features-title">WHAT IT DOES</h2>
       <ul class="feature-grid">
         <li class="feature">
-          <h3 class="feature__title">Only the used space</h3>
-          <p class="feature__text">DiskSnap images hold the data on a drive, not its empty space, so a mostly empty card makes a small image.</p>
+          <h3 class="feature__title">Make Bootable</h3>
+          <p class="feature__text">Write a bootable image to a USB stick or SD card: Linux ISOs like Ubuntu, Raspberry Pi images and Windows 10/11 installers. Tested on real hardware with Ubuntu &mdash; written, verified and booted on a laptop.</p>
         </li>
         <li class="feature">
-          <h3 class="feature__title">Restore to smaller drives</h3>
-          <p class="feature__text">Restore an image to a smaller SD card or USB stick, as long as the data fits.</p>
+          <h3 class="feature__title">Back up to .dsnap</h3>
+          <p class="feature__text">Save a whole SD card or USB drive to a compressed <code>.dsnap</code> file. Empty, zero-filled space shrinks to almost nothing, and the file can be checked after saving.</p>
         </li>
         <li class="feature">
-          <h3 class="feature__title">Back up, restore, clone</h3>
-          <p class="feature__text">Save a drive to a <code>.dsnap</code> image, restore it later, or clone one drive straight to another.</p>
+          <h3 class="feature__title">Restore a backup</h3>
+          <p class="feature__text">Write a <code>.dsnap</code> backup back onto a drive at least as large as the original. The whole backup is checked before anything is erased.</p>
         </li>
         <li class="feature">
           <h3 class="feature__title">Careful with your disks</h3>
-          <p class="feature__text">System and internal drives are protected, and nothing is overwritten without a clear confirmation first.</p>
+          <p class="feature__text">System and internal drives are locked, the drive is re-checked just before writing, and nothing is erased without a clear confirmation. Results are verified by default.</p>
         </li>
         <li class="feature">
           <h3 class="feature__title">Works offline</h3>
@@ -87,7 +87,7 @@
         </li>
         <li class="feature">
           <h3 class="feature__title">Free to use</h3>
-          <p class="feature__text">Backing up, restoring and cloning are free.</p>
+          <p class="feature__text">Making bootable drives, backing up and restoring are free.</p>
         </li>
       </ul>
     </section>
@@ -104,12 +104,12 @@
         <li class="step">
           <span class="step__num" aria-hidden="true">2</span>
           <h3 class="step__title">Choose</h3>
-          <p class="step__text">Pick Backup, Restore or Clone, then choose the source and target.</p>
+          <p class="step__text">Pick Make Bootable, Backup or Restore, then choose your image or backup and the drive.</p>
         </li>
         <li class="step">
           <span class="step__num" aria-hidden="true">3</span>
           <h3 class="step__title">Snap</h3>
-          <p class="step__text">DiskSnap does the rest and checks with you before anything is overwritten.</p>
+          <p class="step__text">DiskSnap checks with you before anything is overwritten, then verifies the result (on by default).</p>
         </li>
       </ol>
     </section>
